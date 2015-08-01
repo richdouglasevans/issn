@@ -1,0 +1,26 @@
+{
+  "name": "issn",
+  "version": "0.0.1",
+  "description": "ISSN Validation",
+  "main": "issn.js",
+  "scripts": {
+    "test": "jasmine-node --color test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richdouglasevans/issn.git"
+  },
+  "keywords": [
+    "issn",
+    "validation"
+  ],
+  "author": "Rich Douglas <rich.douglas.evans@gmail.com> (https://github.com/richdouglasevans)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richdouglasevans/issn/issues"
+  },
+  "devDependencies": {
+    "jasmine": "~2.3.1",
+    "expect": "~1.8.0"
+  }
+}
