@@ -2,6 +2,8 @@
 
 ![Build status](https://api.travis-ci.org/richdouglasevans/issn.png)
 
+[![NPM](https://nodei.co/npm/issn.png?compact=true)](https://nodei.co/npm/issn/)
+
 ```bash
 npm install @richdouglas/issn
 ```
