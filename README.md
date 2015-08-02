@@ -5,9 +5,8 @@
 [![NPM](https://nodei.co/npm/issn.png?compact=true)](https://nodei.co/npm/issn/)
 
 ```bash
-npm install @richdouglas/issn
+npm install issn
 ```
-
 ```js
 var issn = require('issn');
 ```
@@ -29,15 +28,11 @@ issn.format('0001253x');  // '0001-253X'
 issn.format('0xDEADBEEF'); // undefined
 ```
 
-* Source of valid ISSNs [used in the tests.](https://docs.google.com/spreadsheets/d/1MHjgf-slOIOFejTQh_NCl_HFLRs3UmxjFhY0pwT2K_c/edit)
-
 ### Small print
 
 Author: Rich Douglas &copy; 2015
 
 * [@richdevans](https://twitter.com/richdevans)
-
-License: MIT - do anything with the code, but don't blame me if it does not work.
 
 Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/richdouglasevans/issn/issues?state=open) on Github
