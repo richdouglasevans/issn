@@ -1,6 +1,6 @@
 [ISSN](http://www.issn.org/understanding-the-issn/what-is-an-issn/) Validation
 
-![Build status](https://api.travis-ci.org/richdouglasevans/issn.png)
+[![Build status](https://api.travis-ci.org/richdouglasevans/issn.png) ](https://travis-ci.org/richdouglasevans/issn)
 
 [![NPM](https://nodei.co/npm/issn.png?compact=true)](https://nodei.co/npm/issn/)
 
