@@ -28,14 +28,8 @@ issn.format('0001253x');  // '0001-253X'
 issn.format('0xDEADBEEF'); // undefined
 ```
 
-### Small print
-
-Author: Rich Douglas &copy; 2015
-
-* [@richdevans](https://twitter.com/richdevans)
-
-Support: if you find any problems with this module, email / tweet /
-[open issue](https://github.com/richdouglasevans/issn/issues?state=open) on Github
+If you find any problems with this module, [tweet](https://twitter.com/richdevans) or
+[open an issue](https://github.com/richdouglasevans/issn/issues?state=open).
 
 ## MIT License
 

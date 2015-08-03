@@ -6,7 +6,6 @@ module.exports = function() {
     tests: [
       'test/*-spec.js'
     ],
-    debug: true,
     env: {
       type: 'node'
     }

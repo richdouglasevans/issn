@@ -51,7 +51,7 @@ describe('ISSN', function() {
     });
   });
 
-  describe('format with', function() {
+  describe('format', function() {
 
     describe('valid ISSN with', function() {
 
@@ -72,16 +72,16 @@ describe('ISSN', function() {
       });
     });
 
-    describe('invalid ISSN', function() {
+    describe('invalid ISSN with', function() {
 
       it('"1234-12340000"', function() {
         expect(issn.format('1234-12340000')).toBeFalsy();
       });
-      
+
       it('not a string.', function() {
         expect(issn.format({greeting: 'oh hai thar!'})).toBeFalsy();
       });
-      
+
       it('undefined', function() {
         expect(issn.format()).toBeFalsy();
       });

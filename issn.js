@@ -6,10 +6,6 @@
   var isIssnLax = new RegExp(issnPattern, 'i');
 
   function verifyIssn(issn) {
-    if (!issn) {
-      return false;
-    }
-
     var matches = text(issn).match(isIssnStrict);
     if (!matches) {
       return false;
@@ -43,18 +39,14 @@
     return typeof o === 'string' ? o : '';
   }
 
-  function formatIssn(issn) {
+  verifyIssn.format = function formatIssn(issn) {
     var matches = text(issn).match(isIssnLax);
     return matches
         ? matches[1] + '-' + matches[2] + matches[3].toUpperCase()
         : undefined;
-  }
-
-  var issn = verifyIssn;
-  issn.format = formatIssn;
+  };
 
   if (module && typeof module.exports !== 'undefined') {
-    module.exports = issn;
+    module.exports = verifyIssn;
   }
 }();
-
