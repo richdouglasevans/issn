@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "jasmine": "2.3.2",
-    "expect": "1.12.0",
+    "expect": "1.12.1",
     "jasmine-node": "1.14.5"
   }
 }
