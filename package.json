@@ -1,6 +1,6 @@
 {
   "name": "issn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ISSN Validation",
   "main": "issn.js",
   "bin": "cli.js",
@@ -33,10 +33,7 @@
     "jasmine-node": "1.14.5"
   },
   "dependencies": {
-    "bluebird": "2.10.2",
-    "chomp": "0.0.1",
     "get-stdin": "4.0.1",
-    "get-stdin-promise": "0.1.1",
     "minimist": "1.2.0"
   }
 }
