@@ -1,11 +1,19 @@
 {
   "name": "issn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ISSN Validation",
   "main": "issn.js",
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
     "test": "jasmine-node --color test"
   },
+  "files": [
+    "issn.js",
+    "cli.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/richdouglasevans/issn.git"
@@ -15,7 +23,7 @@
     "validation"
   ],
   "author": "Rich Douglas <rich.douglas.evans@gmail.com> (https://github.com/richdouglasevans)",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/richdouglasevans/issn/issues"
   },
@@ -23,5 +31,12 @@
     "jasmine": "2.3.2",
     "expect": "1.12.1",
     "jasmine-node": "1.14.5"
+  },
+  "dependencies": {
+    "bluebird": "2.10.2",
+    "chomp": "0.0.1",
+    "get-stdin": "4.0.1",
+    "get-stdin-promise": "0.1.1",
+    "minimist": "1.2.0"
   }
 }

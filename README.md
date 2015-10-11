@@ -24,7 +24,7 @@ Format ISSNs.
 issn.format('0355-4325'); // '0355-4325'
 issn.format('0001253x');  // '0001-253X'
 
-issn.format('0xDEADBEEF'); // undefined
+issn.format('0xDEDBEEF'); // undefined
 ```
 
 Calculate the check-digit.
@@ -32,6 +32,19 @@ Calculate the check-digit.
 ```js
 issn.calculateCheckDigit('0355432'); // '5'
 issn.calculateCheckDigit('0001253'); // 'X'
+```
+
+## CLI
+
+```bash
+$ issn <ISSN>
+```
+
+Here's an example piping output from [jq](https://stedolan.github.io/jq/).
+
+```bash
+echo {\"prism:pissn\": \"0000-0019\"} | jq -r '.["prism:pissn"]' | issn
+true
 ```
 
 If you find any problems with this module, [tweet](https://twitter.com/richdevans) or
