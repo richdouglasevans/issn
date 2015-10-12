@@ -1,4 +1,6 @@
-module.exports = function() {
+var babel = require('babel');
+
+module.exports = function(wallaby) {
   return {
     files: [
       'issn.js'
@@ -8,6 +10,14 @@ module.exports = function() {
     ],
     env: {
       type: 'node'
+    },
+
+    compilers: {
+      '**/*.js': wallaby.compilers.babel({
+        babel: babel,
+        // https://babeljs.io/docs/usage/experimental/
+        stage: 0
+      })
     }
   };
 };
