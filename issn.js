@@ -43,7 +43,7 @@
                 return sum + (value * (index + 2));
               }, 0) % 11;
 
-      var checkDigit = 11 - result;
+      var checkDigit = (result === 0) ? 0 : 11 - result;
       if (checkDigit === 10) {
         checkDigit = 'X';
       }
