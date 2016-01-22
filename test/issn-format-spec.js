@@ -2,7 +2,8 @@
 'use strict';
 
 var issn = require('../issn')
-    , expect = require('expect');
+    , expect = require('expect')
+    , _ = require('lodash');
 
 describe('ISSN .format', function () {
 
@@ -43,5 +44,16 @@ describe('ISSN .format', function () {
       expect(issn.format(null)).toBeFalsy();
     });
   });
-});
 
+  describe('composition allows us to validate ISSNs that are not well-formed.', function () {
+    var _issn = _.compose(issn, issn.format);
+
+    it('"0001-253x"', function () {
+      expect(_issn('0001-253x')).toBeTruthy();
+    });
+
+    it('"0001253x"', function () {
+      expect(_issn('0001253x')).toBeTruthy();
+    });
+  });
+});

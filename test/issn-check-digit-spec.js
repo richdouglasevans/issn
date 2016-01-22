@@ -10,6 +10,10 @@ describe('ISSN .calculateCheckDigit with', function () {
     expect(issn.calculateCheckDigit('0000001')).toEqual('9');
   });
 
+  it('"0040-4020".', function () {
+    expect(issn.calculateCheckDigit('0040402')).toEqual('0');
+  });
+
   it('undefined.', function () {
     expect(function () {
       issn.calculateCheckDigit()
