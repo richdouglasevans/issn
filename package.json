@@ -28,9 +28,8 @@
     "url": "https://github.com/richdouglasevans/issn/issues"
   },
   "devDependencies": {
-    "babel": "5.8.23",
-    "expect": "1.12.1",
-    "jasmine": "2.3.2",
+    "jasmine": "2.4.1",
+    "expect": "1.13.3",
     "jasmine-node": "1.14.5"
   },
   "dependencies": {
