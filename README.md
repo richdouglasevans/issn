@@ -5,7 +5,7 @@
 [![devDependency Status](https://david-dm.org/richdouglasevans/issn/dev-status.svg)](https://david-dm.org/richdouglasevans/issn#info=devDependencies)
 ![Achievement Unlocked!](https://img.shields.io/badge/achievement-unlocked-brightgreen.svg)
 
-[![NPM](https://nodei.co/npm/issn.png?compact=true)](https://nodei.co/npm/issn/)
+[![NPM](https://nodei.co/npm/issn.png?compact=true)](https://nodei.co/npm/issn/) [![Greenkeeper badge](https://badges.greenkeeper.io/richdouglasevans/issn.svg)](https://greenkeeper.io/)
 
 ```bash
 npm install issn
