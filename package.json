@@ -34,7 +34,7 @@
     "jasmine-node": "1.16.2"
   },
   "dependencies": {
-    "get-stdin": "6.0.0",
+    "get-stdin": "7.0.0",
     "minimist": "1.2.0"
   }
 }
