@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "jasmine": "3.3.0",
-    "expect": "23.6.0",
+    "expect": "24.1.0",
     "jasmine-node": "1.16.2"
   },
   "dependencies": {
