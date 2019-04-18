@@ -29,9 +29,10 @@
     "url": "https://github.com/richdouglasevans/issn/issues"
   },
   "devDependencies": {
-    "jasmine": "3.3.0",
     "expect": "24.1.0",
-    "jasmine-node": "1.16.2"
+    "jasmine": "3.3.0",
+    "jasmine-node": "1.16.2",
+    "lodash": "^4.17.11"
   },
   "dependencies": {
     "get-stdin": "7.0.0",

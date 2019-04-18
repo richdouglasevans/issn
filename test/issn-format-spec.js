@@ -46,7 +46,7 @@ describe('ISSN .format', function () {
   });
 
   describe('composition allows us to validate ISSNs that are not well-formed.', function () {
-    var _issn = _.compose(issn, issn.format);
+    var _issn = _.flowRight(issn, issn.format);
 
     it('"0001-253x"', function () {
       expect(_issn('0001-253x')).toBeTruthy();
