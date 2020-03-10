@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "get-stdin": "7.0.0",
-    "minimist": "1.2.0"
+    "minimist": "1.2.1"
   }
 }
