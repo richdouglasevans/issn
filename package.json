@@ -1,6 +1,6 @@
 {
   "name": "issn",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ISSN Validation",
   "main": "issn.js",
   "bin": "cli.js",
@@ -13,8 +13,10 @@
   },
   "files": [
     "issn.js",
-    "cli.js"
+    "cli.js",
+    "index.d.ts"
   ],
+  "types": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/richdouglasevans/issn.git"
@@ -36,6 +38,6 @@
   },
   "dependencies": {
     "get-stdin": "7.0.0",
-    "minimist": "1.2.0"
+    "minimist": "^1.2.5"
   }
 }
