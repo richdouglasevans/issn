@@ -2,7 +2,7 @@
 'use strict';
 
 var issn = require('../issn')
-    , expect = require('expect');
+    , { expect } = require('expect');
 
 describe('ISSN .calculateCheckDigit with', function () {
 
