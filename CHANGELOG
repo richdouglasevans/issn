@@ -1,0 +1,8 @@
+# Changelog
+
+## [Unreleased]
+
+### Changed
+
+- Updated (most) dependencies to their latest versions.
+- Removed a bunch of guff (badges, links) from the README.
