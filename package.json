@@ -1,6 +1,6 @@
 {
   "name": "issn",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "ISSN Validation",
   "main": "issn.js",
   "bin": "cli.js",
@@ -31,13 +31,13 @@
     "url": "https://github.com/richdouglasevans/issn/issues"
   },
   "devDependencies": {
-    "expect": "^29.0.1",
-    "jasmine": "^4.3.0",
+    "expect": "^29.0.3",
+    "jasmine": "^4.4.0",
     "jasmine-node": "3.0.0",
     "lodash": "^4.17.21"
   },
   "dependencies": {
     "get-stdin": "7.0.0",
-    "minimist": "^1.2.6"
+    "yargs": "^17.5.1"
   }
 }
