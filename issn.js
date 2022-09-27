@@ -3,12 +3,17 @@
   var issn = function () {
     'use strict';
 
-    var issnPattern = '^(\\d{4})-?(\\d{3})([\\dX])$';
-    var isIssnStrict = new RegExp(issnPattern);
-    var isIssnLax = new RegExp(issnPattern, 'i');
+    var isIssnLax = new RegExp('^(\\d{4})-?(\\d{3})([\\dX])$', 'i');
 
-    function validate(issn) {
-      var matches = text(issn).match(isIssnStrict);
+    function validate(issn, options) {
+      var opts = options ? options : { strict: false };
+
+      var issnPattern = opts.strict === true
+        ? '^(\\d{4})-(\\d{3})([\\dX])$'   // hyphen is required
+        : '^(\\d{4})-?(\\d{3})([\\dX])$'; // hyphen is optional
+      var isIssn = new RegExp(issnPattern);
+
+      var matches = text(issn).match(isIssn);
       if (!matches) {
         return false;
       }
